@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Assignment",
+    "description": "A Blog site challenge by frontendmentor to showcase adept knowledge on html skills like flexbox and grid.",
+    "image": "/src/assets/imgs/download.png",
+    "link": "https://assignments-six-ecru.vercel.app/"
+  },
+  {
+    "Name": "Feed-Me",
+    "description": "Feed me app, a recipe site blending delicious dishes with tech magic. Built with the witty minds of the Sarcastic Geek Trybe, we turned debates over code (and pineapple on pizza) into a functional, mouthwatering masterpiece!.",
+    "image": "src/assets/imgs/feedme.png",
+    "link": "https://feed-me-app-lyart.vercel.app/"
+  },
+  {
+    "Name": "Gilsong-2024",
+    "description": "What better way to share this beautiful union than to display it with visually appealing designs. With this i know i brought a smile to the face of Mr and Mrs Obot.",
+    "image": "src/assets/imgs/wedding.png",
+    "link": "https://gilsong-2024-11.vercel.app/"
+  },
+  {
+    "Name": "Victoire's Store",
+    "description": "Shop to your hearts content at victoire's store, with user friendly and appealing interaction, we at victoire's store hope to please.",
+    "image": "src/assets/imgs/victoire-store.png",
+    "link": "https://la-victoire-store.vercel.app/"
+  }
+]
