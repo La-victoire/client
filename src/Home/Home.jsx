@@ -46,7 +46,7 @@ const Home = () => {
           <div className="w-full grad h-[300px] md:h-[525px]">
             <img
               className="md:w-full w-9/12 h-full object-cover rounded-lg shadow-lg z-10"
-              src="public/imgs/E46A9326.jpg"
+              src="/imgs/E46A9326.jpg"
               alt="My image"
             />
           </div>
