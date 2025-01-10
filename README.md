@@ -57,7 +57,7 @@ Other notable projects in progress include:
 
 ## Let’s Connect!  
 
-- **Portfolio:** [Your Portfolio Link]  
+- **Portfolio:** [https://la-victoireportfolio.vercel.app/]  
 - **GitHub:** [https://github.com/Victory-Oghuvbu](https://github.com/Victory-Oghuvbu)  
 - **LinkedIn:** [https://www.linkedin.com/in/victory-oghuvbu](https://www.linkedin.com/in/victory-oghuvbu)  
 
