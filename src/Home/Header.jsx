@@ -18,7 +18,7 @@ const Header = ({scroll}) => {
 
   return (  
  <>
- <div className='px-5 z-20 border-b items-center border-black py-8 text-white text-lg justify-between lg:justify-evenly bg-transparent bg-opacity-20 backdrop-blur-lg sticky top-0 flex space-x-2'>
+ <div className='px-5 z-20 border-b items-center playwrite-vn border-black py-8 text-white text-lg justify-between lg:justify-evenly bg-transparent bg-opacity-20 backdrop-blur-lg sticky top-0 flex space-x-2'>
  <div className='md:text-2xl text-base balme'>
   <span className='text-blue-300  text-3xl'  > [ </span>
   L a - V i c t o i r e <span className='text-blue-400  text-3xl' > ] </span>
@@ -57,7 +57,7 @@ const Header = ({scroll}) => {
         <p onClick={()=> {scroll('Abt')}}>About</p>
         <p onClick={()=>{scroll('Proj')}}>Project</p>
         <p onClick={()=> {scroll('Foot')}}>Contact Me</p>
-        <a href="public/imgs/Oghuvbu_Victory_CV.pdf" download='Oghuvbu Victory C.V'>
+        <a href="/imgs/Oghuvbu_Victory_CV.pdf" download='Oghuvbu Victory C.V'>
         <p>Resume</p>
         </a>
           </div>

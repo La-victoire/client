@@ -1,16 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;650&display=swap");
-
-* html {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+VN:wght@100..400&family=Rubik+Vinyl&display=swap');* html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bebas Neue", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.playwrite-vn {
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .gradient-bg-welcome {
@@ -63,10 +66,10 @@ body {
 
 @font-face{
   font-family: 'balme';
-  src: url('public/balme-webfont.woff');
-  src: url('public/balme-webfont.woff?#iefix') format('embedded-opentype'),
-  url('public/balme-webfont.woff') format('woff'),
-  url('public/balme.otf') format('truetype');
+  src: url('/balme-webfont.woff');
+  src: url('/balme-webfont.woff?#iefix') format('embedded-opentype'),
+  url('/balme-webfont.woff') format('woff'),
+  url('/balme.otf') format('truetype');
   }
 .balme {
   font-family: 'balme',Arial ,sans-serif ;
@@ -74,10 +77,10 @@ body {
 
 @font-face{
   font-family: 'refin';
-  src: url('public/refin-webfont.woff');
-  src: url('public/refin-webfont.woff?#iefix') format('embedded-opentype'),
-  url('public/refin-webfont.woff') format('woff'),
-  url('public/refin.otf') format('truetype');
+  src: url('/refin-webfont.woff');
+  src: url('/refin-webfont.woff?#iefix') format('embedded-opentype'),
+  url('/refin-webfont.woff') format('woff'),
+  url('/refin.otf') format('truetype');
 }
 .refin {
   font-family: 'refin',Arial ,sans-serif ;

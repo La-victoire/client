@@ -58,9 +58,12 @@ const Home = () => {
           </p>
           <div className="flex flex-col space-y-3 text-[#aeaeae]">
             <span className="block text-xl">My Name is</span>
-            <span className="overflow-hidden balme font-bold txt-grad lg:text-[60px] text-[50px]">
+            <span className='playwrite-vn'>
+              <span className="overflow-hidden balme font-bold txt-grad lg:text-[54px] text-[48px]">
               {DisplayText}.
             </span>
+            </span>
+            
             <p className="text-4xl font-bold text-[#aeaeae] leading-relaxed">
               I'm a <strong className="text-white">Software Engineer</strong> with a passion for building responsive, intuitive interfaces.
             </p>
@@ -75,7 +78,7 @@ const Home = () => {
                 </button>
               </a>
               <a
-                href="public/imgs/Oghuvbu_Victory_CV.pdf"
+                href="/imgs/Oghuvbu_Victory_CV.pdf"
                 download="Oghuvbu-Victory-CV"
               >
                 <button className="bg-transparent border rounded-2xl px-4 py-2 hover:bg-white hover:text-black">

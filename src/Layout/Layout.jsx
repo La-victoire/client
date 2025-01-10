@@ -78,8 +78,8 @@ const Layout = () => {
           initial={{ opacity: 0, y:60 }}
           animate={{ opacity: 1, y:0 }}
           transition={{ duration: 1 }}
-          className='md:text-[100px] text-[50px] txt-grad text-center balme'>
-            <span>
+          className='md:text-[90px] text-[50px] txt-grad text-center playwrite-vn'>
+            <span className='balme'>
             {DisplayText}
             </span>
             <span className='bg-white ml-2 w-[2px] inline-block h-6 animate-pulse '></span>
