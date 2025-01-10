@@ -93,10 +93,10 @@ body {
 .grad::after {
   background-image: conic-gradient(from var(--angle), #ff4545 20%,#00ff99 40% ,#3d99be 60%, #ff0095 80%, #ff4545 100% );
   animation: borderspin 2s linear infinite;
-  @apply content-[''] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[638px] xl:h-[495px] p-3
+  @apply content-[''] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-full w-9/12 h-full 
 } 
 .grad::before {
-  @apply content-[''] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-[638px] xl:h-[495px] p-3
+  @apply content-[''] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-full w-9/12 h-full 
   opacity-50 blur-[1.5rem]
 }
 @keyframes borderspin {
@@ -108,6 +108,7 @@ body {
   }
 }
 
+
 @font-face{
   font-family: 'balme';
   src: url('src/assets/balme-webfont.woff');
@@ -118,32 +119,7 @@ body {
 .balme {
   font-family: 'balme',Arial ,sans-serif ;
 }
-.writting{
-  border-right: 1px solid #fff;
-  white-space: nowrap;
-  animation: typing 3000ms steps(13) forwards,
-  blink 1s step-end 1;
-}
-.writting.done {
-  animation: none;
-  border: transparent;
-}
-@keyframes typing{
-  from{ 
-    width: 0%;
-  }
-  to{
-    width: 100%;
-    }
-}
-@keyframes blink {
-  50%{
-   border-color: transparent;
-  }
-  100%{
-    border-right: transparent;
-  }
-}
+
 @font-face{
   font-family: 'refin';
   src: url('src/assets/refin-webfont.woff');

@@ -1,14 +1,41 @@
 import React from 'react'
-import { FaGamepad } from "react-icons/fa";
+import { useOutletContext } from "react-router-dom";
+import { FaGamepad, FaReact } from "react-icons/fa";
 import { FaBookReader } from "react-icons/fa";
 import { PiBracketsAngleBold } from "react-icons/pi";
 import { PiCurrencyEthBold } from "react-icons/pi";
+import { useState, useEffect } from 'react';
+import '../index.css'
 
 
 const stack = "rounded-full bg-[hsla(339,49%,30%,1)] text-white font-thin mt-3 flex px-4 py-2"
 
 
 const About = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const {abtRef} = useOutletContext();
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const entry = entries[0];
+      setIsVisible(entry.isIntersecting);
+    },
+    {
+      root: null, // Observe within the viewport
+      threshold: 0.2, // Trigger when 30% of the element is visible
+    }
+  );
+
+  if (abtRef.current) {
+    observer.observe(abtRef.current);
+  }
+
+  return () => {
+    if (abtRef.current) {
+      observer.unobserve(abtRef.current);
+    }
+  };
+}, []);// Cleanup on unmount
 
   return (
     <>
@@ -58,17 +85,22 @@ const About = () => {
           </div>
           <div className='space-y-3  sm:w-full h-full '>
             <h1 className='text-4xl '>Tech Stack</h1>
-            <div className='space-x-2 flex flex-row w-full items-center flex-wrap'>
-            <p className={`${stack}`}>PYTHON</p>
-            <p className={`${stack}`}>TYPESCRIPT</p>
-            <p className={`${stack}`}>JAVASCRIPT</p>
-            <p className={`${stack}`}>NEXTJS</p>
-            <p className={`${stack}`}> REACT</p>
-            <p className={`${stack}`}>TAILWINDCSS</p>
-            <p className={`${stack}`}>CSS3</p>
-            <p className={`${stack}`}>FIREBASE</p>
-            <p className={`${stack}`}>DOCKER</p>
-            <p className={`${stack}`}>REACT NATIVE</p>
+            <div ref={abtRef} className='space-x-2 flex flex-row w-full items-center flex-wrap'>
+              {[
+                "PYTHON",'TYPESCRIPT','JAVASCRIPT','NEXTJS','REACT',"TAILWINDCSS","CSS3","FIREBASE","DOCKER","REACT-NATIVE"
+              ].map((skill, index)=>(
+                <div 
+                key={index} 
+                className=''
+                >
+                  <p 
+                  key={index}
+                  className={`${stack} ${isVisible ? 'animate-fadeUp' : 'hidden '} `}
+                  style={{animationDelay: `${index * 0.5}s`, animationFillMode:"both"}} 
+                   >
+                    {skill}</p>
+                  </div>
+              ))}
 
             </div>
           </div>

@@ -16,36 +16,28 @@
             mf: "990px",
           },
           keyframes: {
-            rotate: {
-              '0%': {
-                transform: '--angle(0deg)',
+              rotate: {
+                '0%': {
+                  transform: '--angle(0deg)',
+                },
+                '100%': {
+                  transform: '--angle(360deg)',
+                },
               },
-              '100%': {
-                transform: '--angle(360deg)',
+              fadeUp: {
+                '0%': { opacity: 0, transform: 'translateY(20px)' }, // Fading in and moving up
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+              fadeSlide: {
+                '0%': { opacity: 0, transform: 'translateX(-20px)' }, // Fading in and sliding sideways
+                '100%': { opacity: 1, transform: 'translateX(0)' },
               },
             },
-          },
-          animation: {
-            rotate: 'rotate 5s linear infinite',
-          },
-          keyframes: {
-            "slide-in": {
-              '0%': { opacity: 0, transform: 'translateX(10px)' },
-              '100%': { opacity: 1, transform: 'translateX(0)' },
+            animation: {
+              rotate: 'rotate 2s linear infinite',
+              fadeUp: 'fadeUp 0.6s ease-out forwards',
+              fadeSlide: 'fadeSlide 0.6s ease-out forwards',
             },
-          },
-          animation: {
-            "slide-in": "slide-in 0.5s ease-in-out",
-          },
-          keyframes: {
-            fadeInUp: {
-              '0%': { opacity: 0, transform: 'translateY(30px)' },
-              '100%': { opacity: 1, transform: 'translateY(0)' },
-            },
-          },
-          animation: {
-            fadeInUp: 'fadeInUp 0.7s ease-in-out',
-          },
         },
       },
       variants: {
@@ -53,4 +45,4 @@
       },
       plugins: [],
     }
-  
+    

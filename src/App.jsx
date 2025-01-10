@@ -6,7 +6,6 @@ import Layout from "./Layout/Layout";
 import About from "./Home/About";
 import { useEffect,useState } from "react";
 import Projects from "./Home/Projects";
-import AnimatedSection from "./Home/Animated";
 function App() {
 
 
@@ -18,7 +17,6 @@ function App() {
            <Route index element={<Home />} />
            <Route path="/" element={<About />} />
            <Route path="/" element={<Projects />}/>
-           <Route path="/test" element={<AnimatedSection />}/>
           </Route>
         </Routes>
       </BrowserRouter>

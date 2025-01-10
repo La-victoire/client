@@ -27,11 +27,11 @@ useEffect(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       const entry = entries[0];
-      setIsVisible(entry.isIntersecting);
+      setIsVisible(true);
     },
     {
       root: null, // Observe within the viewport
-      threshold: 0.3, // Trigger when 30% of the element is visible
+      threshold: 0.3, // Trigger when 20% of the element is visible
     }
   );
 
@@ -57,28 +57,24 @@ useEffect(() => {
     </h2>
     <div className="min-h-screen bg-transparent bg-opacity-20 backdrop-blur-lg p-6">
       <div  
-      ref={projRef}
       className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {project.map((project, index) => (
           <div
+            ref={projRef}
             key={index}
-            className={`flex flex-col shadow-lg rounded-t-3xl py-5 bg-white/5 items-center overflow-hidden hover:scale-105  transition-all transform ${isVisible ? 'animate-fadeInUp' : 'hidden'}`}>
+            style={{animationDelay: `${index * 0.5}s`, animationFillMode: 'both'}}
+            className={`flex flex-col shadow-lg rounded-t-3xl py-5 bg-white/5 items-center overflow-hidden hover:scale-105  transition-all duration-700 ease-in-out transform ${isVisible ? 'animate-fadeSlide' : 'hidden '}`}>
             
             <img
-              style={{animationDelay: `${index * 0.5}s`}} //added delay based on the project index
               src={project.image}
               alt={project.Name}
               className="w-[175px] lg:w-[350px] rounded-lg lg:h-48 h-24"
             />
             <div className="flex flex-col items-center w-10/12">
-              <h3 
-                style={{animationDelay: `${index * 0.5}s`}} //added delay based on the project index
-                className="text-lg font-light py-2 mb-2">
+              <h3 className="text-lg font-light py-2 mb-2">
                 {project.Name}
               </h3>
-              <p 
-                style={{animationDelay: `${index * 0.5}s`}} //added delay based on the project index
-                className="text-[#aeaeae] pb-5 lg:w-9/12 w-full flex flex-wrap text-sm">
+              <p className="text-[#aeaeae] pb-5 lg:w-9/12 w-full flex flex-wrap text-sm">
                 {project.description}
               </p>
               <div className='flex justify-between w-9/12 font-thin text-sm'>

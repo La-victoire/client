@@ -6,6 +6,7 @@ import { BsShareFill } from 'react-icons/bs'
 import { CgProfile } from 'react-icons/cg'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { useState } from 'react'
+import { X } from 'lucide-react'
 
 const Header = ({scroll}) => {
   const [dropDown, setDropDown] = useState(false)
@@ -48,7 +49,9 @@ const Header = ({scroll}) => {
     ):(
       <div className=' border-b border-l border-black bg-[#aeaeae] bg-opacity-20 backdrop-blur-xl p-4 animate-slide-in text-[#aeaeae] font-light absolute top-1/2 left-[90%] transition-all duration-700 ease-in-out transform -translate-x-1/2'>
         <div onClick={()=>{handleDropDown()}}
-        className='flex justify-end -translate-x-3 cursor-pointer '>x</div>
+        className='flex justify-end -translate-x-1 mb-2 cursor-pointer '>
+          <X size={29} className='text-blue-400'/>
+        </div>
         <div className='flex flex-col cursor-pointer space-y-2'>
         <p onClick={() => {scroll('Home')}}>Home</p>
         <p onClick={()=> {scroll('Abt')}}>About</p>

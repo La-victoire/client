@@ -38,21 +38,21 @@ const Home = () => {
         id="Home"
         ref={homeRef}
         className="flex flex-col-reverse
-        justify-center  items-center 
-        md:flex-row-reverse sm:flex-row-reverse"
+        justify-center gap-y-10 md:gap-y-0   items-center 
+        md:flex-row-reverse "
       >
         {/* Image Section */}
-        <div className="w-full md:w-5/12  flex justify-center items-center">
-          <div className="w-full  h-[300px] lg:h-[525px] relative">
+        <div className="w-full md:w-6/12 flex justify-center items-center">
+          <div className="w-full grad h-[300px] md:h-[525px]">
             <img
-              className="w-full sm:w-5/12 h-full object-cover rounded-lg shadow-lg z-10"
+              className="md:w-full w-9/12 h-full object-cover rounded-lg shadow-lg z-10"
               src="src/assets/imgs/E46A9326.jpg"
               alt="My image"
             />
           </div>
         </div>
         {/* Text Section */}
-        <div className="w-full md:w-7/12 flex flex-col justify-center items-start space-y-6 px-5 md:px-10">
+        <div className="w-full md:w-6/12 flex flex-col justify-center items-start space-y-6 px-5 md:px-10">
           <p className="inline border text-white px-4 py-2">
             Hi there, Welcome to my digital space
           </p>
@@ -90,8 +90,7 @@ const Home = () => {
       <section id='Abt' ref={abtRef} className='mt-10 border-t border-white text-white'>
         <About  />
       </section>
-      <section id='Proj' 
-      ref={projRef}
+      <section id='Proj' ref={projRef}
       className={` text-white`}>
         <Projects/>
       </section>

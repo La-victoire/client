@@ -78,7 +78,7 @@ const Layout = () => {
           initial={{ opacity: 0, y:60 }}
           animate={{ opacity: 1, y:0 }}
           transition={{ duration: 1 }}
-          className='text-[100px] txt-grad text-center balme'>
+          className='md:text-[100px] text-[50px] txt-grad text-center balme'>
             <span>
             {DisplayText}
             </span>
@@ -90,7 +90,7 @@ const Layout = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-          className='text-[#aeaeae] transition-all duration-700 ease-in-out transform text-center text-4xl '
+          className='text-[#aeaeae] transition-all duration-700 ease-in-out transform text-center text-2xl md:text-4xl '
           >
               Software Engineer 
               Web And Mobile App Developer
