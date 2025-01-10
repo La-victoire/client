@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="lg:px-10 py-8">
+      <div className="lg:px-10 pt-8">
       <section
         id="Home"
         ref={homeRef}
@@ -94,7 +94,7 @@ const Home = () => {
       className={` text-white`}>
         <Projects/>
       </section>
-      <section id='Foot' ref={footRef} className='text-[#aeaeae] border-t border-white mt-9 flex flex-col items-center'>
+      <section id='Foot' ref={footRef} className='text-[#aeaeae] gradient-bg-footer border-t border-white mt-9 flex flex-col items-center'>
         <Footer/>
       </section>
       </div>
