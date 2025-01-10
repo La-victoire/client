@@ -63,10 +63,10 @@ body {
 
 @font-face{
   font-family: 'balme';
-  src: url('src/assets/balme-webfont.woff');
-  src: url('src/assets/balme-webfont.woff?#iefix') format('embedded-opentype'),
-  url('src/assets/balme-webfont.woff') format('woff'),
-  url('src/assets/balme.otf') format('truetype');
+  src: url('public/balme-webfont.woff');
+  src: url('public/balme-webfont.woff?#iefix') format('embedded-opentype'),
+  url('public/balme-webfont.woff') format('woff'),
+  url('public/balme.otf') format('truetype');
   }
 .balme {
   font-family: 'balme',Arial ,sans-serif ;
@@ -74,10 +74,10 @@ body {
 
 @font-face{
   font-family: 'refin';
-  src: url('src/assets/refin-webfont.woff');
-  src: url('src/assets/refin-webfont.woff?#iefix') format('embedded-opentype'),
-  url('src/assets/refin-webfont.woff') format('woff'),
-  url('src/assets/refin.otf') format('truetype');
+  src: url('public/refin-webfont.woff');
+  src: url('public/refin-webfont.woff?#iefix') format('embedded-opentype'),
+  url('public/refin-webfont.woff') format('woff'),
+  url('public/refin.otf') format('truetype');
 }
 .refin {
   font-family: 'refin',Arial ,sans-serif ;

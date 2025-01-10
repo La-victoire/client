@@ -46,7 +46,7 @@ const Home = () => {
           <div className="w-full grad h-[300px] md:h-[525px]">
             <img
               className="md:w-full w-9/12 h-full object-cover rounded-lg shadow-lg z-10"
-              src="src/assets/imgs/E46A9326.jpg"
+              src="public/imgs/E46A9326.jpg"
               alt="My image"
             />
           </div>
@@ -75,7 +75,7 @@ const Home = () => {
                 </button>
               </a>
               <a
-                href="src/assets/imgs/Oghuvbu_Victory_CV.pdf"
+                href="public/imgs/Oghuvbu_Victory_CV.pdf"
                 download="Oghuvbu-Victory-CV"
               >
                 <button className="bg-transparent border rounded-2xl px-4 py-2 hover:bg-white hover:text-black">

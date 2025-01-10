@@ -57,7 +57,7 @@ const Header = ({scroll}) => {
         <p onClick={()=> {scroll('Abt')}}>About</p>
         <p onClick={()=>{scroll('Proj')}}>Project</p>
         <p onClick={()=> {scroll('Foot')}}>Contact Me</p>
-        <a href="src/assets/imgs/Oghuvbu_Victory_CV.pdf" download='Oghuvbu Victory C.V'>
+        <a href="public/imgs/Oghuvbu_Victory_CV.pdf" download='Oghuvbu Victory C.V'>
         <p>Resume</p>
         </a>
           </div>

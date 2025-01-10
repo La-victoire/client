@@ -31,7 +31,7 @@ useEffect(() => {
     },
     {
       root: null, // Observe within the viewport
-      threshold: 0.3, // Trigger when 20% of the element is visible
+      threshold: 0.2, // Trigger when 20% of the element is visible
     }
   );
 
