@@ -47,9 +47,9 @@ const Header = ({scroll}) => {
     {!dropDown ? (
       <GiHamburgerMenu size={20} onClick={() =>{handleDropDown()}}/>
     ):(
-      <div className=' border-b border-l border-black bg-[#aeaeae] bg-opacity-20 backdrop-blur-xl p-4 animate-slide-in text-[#aeaeae] font-light absolute top-1/2 left-[90%] transition-all duration-700 ease-in-out transform -translate-x-1/2'>
+      <div className=' border-b border-l border-black bg-[#aeaeae] bg-opacity-20 backdrop-blur-xl p-4 animate-slide-in text-[#aeaeae] font-light absolute top-1/2 left-[90%] transition-all duration-700 ease-in-out transform -translate-x-1/2 overflow-hidden'>
         <div onClick={()=>{handleDropDown()}}
-        className='flex justify-end -translate-x-1 mb-2 overflow-hidden cursor-pointer '>
+        className='flex justify-end -translate-x-1 mb-2 cursor-pointer '>
           <X size={29} className='text-blue-400'/>
         </div>
         <div className='flex flex-col cursor-pointer space-y-2'>
