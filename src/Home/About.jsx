@@ -74,7 +74,7 @@ useEffect(() => {
         <div className='flex flex-col space-y-10 '>
           <div className='space-y-3 font-thin text-[#aeaeae]'>
             <p className='break-words'>
-            I have been a passionate <strong className='text-white'>Software Engineer</strong>  for <strong>4 years</strong> now, and i am currently seeking a role in an IT company to enhance my skills, gain experience, and contribute to technological advancement in Nigeria and Africa.
+            I have been a passionate <strong className='text-white'>Software Engineer</strong>  for <strong>3 years</strong> now, and i am currently seeking a role in an IT company to enhance my skills, gain experience, and contribute to technological advancement in Nigeria and Africa.
             </p>
             <p>
             My journey into tech began with my encounter with my friend and mentor <strong className='text-white'>Mr Samuel Rukevwe Simon</strong> . His Professionalism and guidiance led me into the wonderful world of technology and sparked my curiousity to exploring various programming languages and frameworks. Through self-study and practical projects, I've developed a strong foundation in frontend development.
@@ -87,7 +87,7 @@ useEffect(() => {
             <h1 className='text-4xl '>Tech Stack</h1>
             <div ref={abtRef} className='space-x-2 flex flex-row w-full items-center flex-wrap'>
               {[
-                "PYTHON",'TYPESCRIPT','JAVASCRIPT','NEXTJS','REACT',"TAILWINDCSS","CSS3","FIREBASE","DOCKER","REACT-NATIVE"
+                "PYTHON",'TYPESCRIPT','JAVASCRIPT','NEXTJS','REACT',"TAILWINDCSS","CSS3","NESTJS","MONGODB","MONGOOSE","SANITY","ARCJET","DOCKER","REACT-NATIVE","EXPRESSJS"
               ].map((skill, index)=>(
                 <div 
                 key={index} 

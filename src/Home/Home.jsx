@@ -48,6 +48,7 @@ const Home = () => {
               className="md:w-full w-9/12 h-full object-cover rounded-lg shadow-lg z-10"
               src="/imgs/E46A9326.jpg"
               alt="My image"
+              prefetching="true"
             />
           </div>
         </div>
@@ -78,8 +79,8 @@ const Home = () => {
                 </button>
               </a>
               <a
-                href="/imgs/Oghuvbu_Victory_CV.pdf"
-                download="Oghuvbu-Victory-CV"
+                href="/OGHUVBU VICTORY - FULLSTACK DEVELOPER.pdf"
+                download="OGHUVBU VICTORY - FULLSTACK DEVELOPER.pdf"
               >
                 <button className="bg-transparent border rounded-2xl px-4 py-2 hover:bg-white hover:text-black">
                   Resume

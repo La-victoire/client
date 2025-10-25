@@ -9,12 +9,11 @@ const Projects = () => {
  useEffect(() => {
   const Fetch = async () => {
   try {
-    const response = await fetch("/projects.json")
+    const response = await fetch("/projects-extracted.json");
     if (!response.ok) 
       {throw new Error(`Error Retrieving Data, Current Status: ${response.status}`)}
     const data = await response.json() 
     setProject(data)
-    console.log(data);
     
   } catch (Error){
     console.log("Error fetching data")
@@ -58,7 +57,7 @@ useEffect(() => {
     <div className="min-h-screen bg-transparent bg-opacity-20 backdrop-blur-lg p-6">
       <div  
       className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {project.map((project, index) => (
+        {project?.map((project, index) => (
           <div
             ref={projRef}
             key={index}
@@ -66,16 +65,16 @@ useEffect(() => {
             className={`flex flex-col shadow-lg rounded-t-3xl py-5 bg-white/5 items-center overflow-hidden hover:scale-105  transition-all duration-700 ease-in-out transform ${isVisible ? 'animate-fadeSlide' : 'hidden '}`}>
             
             <img
-              src={project.image}
-              alt={project.Name}
-              className="w-[175px] lg:w-[350px] rounded-lg lg:h-48 h-24"
+              src={project?.image}
+              alt={project?.name}
+              className="w-[175px] object-contain lg:w-[350px] rounded-lg lg:h-48 h-24"
             />
             <div className="flex flex-col items-center w-10/12">
               <h3 className="text-lg font-light py-2 mb-2">
-                {project.Name}
+                {project.name}
               </h3>
-              <p className="text-[#aeaeae] pb-5 lg:w-9/12 w-full flex flex-wrap text-sm">
-                {project.description}
+              <p className="text-white pb-5 lg:w-9/12 w-full text-sm justify-center items-center flex flex-wrap">
+               FRAMEWORK: {project.framework ? project.framework : "HTML, CSS, JAVASCRIPT"}
               </p>
               <div className='flex justify-between w-9/12 font-thin text-sm'>
               <p className=''>Live < FaCircle size={9} className='text-green-500 mx-3 inline' /></p>

@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Geely-Home-Interiors",
+    "description": "No description available.",
+    "framework": "NEXTJS",
+    "link": "https://geely-home-interiors.vercel.app",
+    "image": "./screenshots/geely-home-interiors.png",
+    "updatedAt": "2025-09-17T06:05:50.182Z"
+  },
+  {
+    "name": "Anime-vault",
+    "description": "No description available.",
+    "framework": "NEXTJS",
+    "link": "https://anime-vault.vercel.app",
+    "image": "./screenshots/anime-vault.png",
+    "updatedAt": "2025-08-07T03:49:05.803Z"
+  },
+  {
+    "name": "Mojito-cocktails",
+    "description": "No description available.",
+    "framework": "VITE",
+    "link": "https://mojito-cocktails.vercel.app",
+    "image": "./screenshots/mojito-cocktails.png",
+    "updatedAt": "2025-08-07T03:44:18.452Z"
+  },
+  {
+    "name": "Pill-padi",
+    "description": "No description available.",
+    "framework": "VITE",
+    "link": "https://pill-padi.vercel.app",
+    "image": "./screenshots/pill-padi.png",
+    "updatedAt": "2025-07-15T02:25:28.204Z"
+  },
+  {
+    "name": "Gilsong-2024",
+    "description": "What better way to share this beautiful union than to display it with visually appealing designs. With this i know i brought a smile to the face of Mr and Mrs Obot.",
+    "image": "/imgs/wedding.png",
+    "link": "https://gilsong-2024-11.vercel.app/"
+  },
+  {
+    "name": "Gillian Nsisong Brendan",
+    "description": "No description available.",
+    "framework": "VITE",
+    "link": "https://gillian-phi.vercel.app/",
+    "image": "./screenshots/gillian.png",
+    "updatedAt": "2025-07-09T23:09:33.661Z"
+  },
+  {
+    "name": "Star-up",
+    "description": "No description available.",
+    "framework": "NEXTJS",
+    "link": "https://star-up.vercel.app",
+    "image": "./screenshots/star-up.png",
+    "updatedAt": "2025-06-06T02:38:03.721Z"
+  },
+  {
+    "name": "Zentry",
+    "description": "No description available.",
+    "framework": "VITE",
+    "link": "https://zentry-blush-alpha.vercel.app/",
+    "image": "./screenshots/Zentry.png",
+    "updatedAt": "2025-06-06T02:38:03.719Z"
+  }
+]

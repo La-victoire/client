@@ -1,6 +1,9 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaWhatsapp, FaXTwitter } from 'react-icons/fa6'
 const Footer = () => {
+  function getCurrentYear() {
+  return new Date().getFullYear();
+}
   return (
     <>
     <div>
@@ -23,7 +26,7 @@ const Footer = () => {
       </div>
     </div>
     <div className='text-center pt-5'>
-      <p>© 2024 Oghuvbu Victory. All rights reserved.</p>
+      <p>©{getCurrentYear()} Oghuvbu Victory. All rights reserved.</p>
       <p>Made With React and TailwindCSS</p>
     </div>
     </>
