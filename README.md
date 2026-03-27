@@ -6,7 +6,7 @@ Welcome to my portfolio repository! I'm **Oghuvbu Victory**, a passionate **Soft
 
 ## About Me  
 
-I’m a **Software Engineer** with **4 years of experience**, specializing in building visually appealing and functional software using **React**, **Tailwind CSS**, and modern technologies. I thrive on creating seamless user experiences and bringing ideas to life, whether it's a web application or a blockchain-based dApp.  
+I’m a **Software Engineer** with **4 years of experience**, specializing in building visually appealing and functional software using **React**, **Tailwind CSS**, and modern technologies. I thrive on creating seamless user experiences and bringing ideas to life, whether it's a web application or a backend server.  
 
 Beyond development, I’m a **Forex Trader** with an **Extreme interest **in the currency market.On my spare time when I’m not coding or gaming, You can find me scouring the market, watching movies, or reading.  
 
